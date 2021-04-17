@@ -246,7 +246,7 @@ const required = (value) => {
               <Select
                 value={select}
                 onChange={onChangeselect}
-                placeholder = "ss"
+                placeholder = "standard_state"
               //   clearable={this.state.clearable}
               //   searchable={this.state.searchable}
               //   //labelKey={'name'}
@@ -260,7 +260,7 @@ const required = (value) => {
               <Select
                 value={select}
                 onChange={onChangeselect}
-                // placeholder = "class"
+                placeholder = "classification"
               //   clearable={this.state.clearable}
               //   searchable={this.state.searchable}
               //   //labelKey={'name'}
@@ -330,7 +330,7 @@ const required = (value) => {
       </div>
       <div className="row">
           
-           <ShowTables state_tables={ele} tm = {key} username = {user} passwd = {password} dbname = {database} />      
+           <ShowTables state_tables={ele} tm = {key} selected_item = {select} passwd = {password} dbname = {database} />      
            
     </div>
     

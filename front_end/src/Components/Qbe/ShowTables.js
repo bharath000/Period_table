@@ -19,6 +19,7 @@ const ShowTables = (props) => {
     //const currentUser = AuthService.getCurrentUser();
     const state_tables = props.state_tables;
     const tables_list = props.tm;
+    const selected_by = props.selected_item
 
     console.log(state_tables);
 
@@ -75,7 +76,7 @@ const ShowTables = (props) => {
         <div className="container c1">
            <hr></hr>
            <div  className="row" >
-               <div className ="col-6"><h3>Elements</h3>
+               <div className ="col-6"><h3>Elements Selected by:{selected_by}</h3>
         {state_tables.map((ad, index) => (
       <div key={index} className="row" >
        <div className="col-3">
